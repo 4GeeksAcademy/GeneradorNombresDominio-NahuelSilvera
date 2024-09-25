@@ -1,1 +1,57 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* style.css */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #343a40;
+}
+::-webkit-scrollbar-thumb {
+  background: #6c757d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
+}
+
+.list-group-item {
+  background-color: #343a40;
+  color: white;
+  border-color: #343a40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.list-group-item .delete-icon {
+  display: none;
+}
+
+.list-group-item:hover .delete-icon {
+  display: inline-block;
+}
+
+.result-item {
+  margin: 2px;
+}
+
+.list-group-item.selected {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+#pronouns-list .list-group-item:hover {
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #ff6b6b;
+  cursor: pointer;
+}
+
+.delete-icon:hover {
+  color: #ff0000;
+}
